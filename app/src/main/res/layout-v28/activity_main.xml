@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="520sp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="15dp"
+        android:divider="@color/white"
+        android:dividerHeight="10sp"
+        app:layout_constraintBottom_toTopOf="@id/add_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="AddAnimal"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        tools:ignore="MissingConstraints,UsingOnClickInXml"
+        android:background="@drawable/button"
+        android:textColor="#F2F2F2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="UpdateList"
+        android:text="UPDATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/button"
+        android:textColor="#F2F2F2"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/item_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtsearch"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
+        android:text="CLEAR"
+        android:textColor="#f2f2f2"
+        app:layout_constraintBottom_toTopOf="@+id/item_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtsearch"
+        tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:hint="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

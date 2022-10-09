@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="add">ADD</string>
+    <string name="_12">12</string>
+    <string name="name">Name</string>
+    <string name="kind">Kind</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight</string>
+    <string name="add_button">ADD</string>
+</resources>
